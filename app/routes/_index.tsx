@@ -1,4 +1,3 @@
-import type { LinksFunction } from '@remix-run/node';
 import type { MetaFunction } from '@remix-run/node';
 import Logo from '../components/Logo';
 
@@ -21,8 +20,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
     return (
         <>
-            <header>
-                <h1>Hola</h1>
+            <header className='flex justify-center'>
                 <Logo />
             </header>
         </>

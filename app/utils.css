@@ -1,0 +1,35 @@
+/* Margin */
+.margin-center {
+    margin-inline: auto;
+}
+
+/* width */
+.max-width-720 {
+    max-width: 45rem;
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+/* Tests */
+.test {
+    border: 1px solid red;
+}

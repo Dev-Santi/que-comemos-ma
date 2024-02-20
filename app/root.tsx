@@ -1,5 +1,6 @@
 import type { LinksFunction } from '@remix-run/node';
 import globalStylesHref from './global.css';
+import utilsStylesHref from './utils.css';
 import {
     Links,
     LiveReload,
@@ -9,7 +10,10 @@ import {
     ScrollRestoration,
 } from '@remix-run/react';
 
-export const links: LinksFunction = () => [{ rel: 'stylesheet', href: globalStylesHref }];
+export const links: LinksFunction = () => [
+    { rel: 'stylesheet', href: globalStylesHref },
+    { rel: 'stylesheet', href: utilsStylesHref },
+];
 
 export default function App() {
     return (
@@ -20,7 +24,7 @@ export default function App() {
                 <Meta />
                 <Links />
             </head>
-            <body>
+            <body className='margin-center max-width-720'>
                 <Outlet />
                 <ScrollRestoration />
                 <Scripts />
